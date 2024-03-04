@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Basit Hesap Makinesi"
+        android:textSize="24sp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/editTextNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sayı 1"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Sayı 2"
+        android:inputType="numberDecimal"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonToplama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toplama"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonCikarma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Çıkarma"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonCarpma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Çarpma"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonBolme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bölme"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hesapla"
+        android:onClick="hesapla"/>
+
+    <TextView
+        android:id="@+id/textViewSonuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"/>
+
+</LinearLayout>
